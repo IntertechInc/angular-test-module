@@ -23,6 +23,9 @@ spec files across your site.  And that's just a simple example.
 For this reason and more, the mockServiceModule introduced here is a good way to centralize a lot of duplicate unit testing code.
 It is meant as a starting place for the unit tests in your project so that you can focus on the tests and not the plumbing to get them working.
 
+## Plunker
+Find the plunker for the tests here:  [http://plnkr.co/edit/MDGVqgrpiQEAu6bVhBSL?p=preview](http://plnkr.co/edit/MDGVqgrpiQEAu6bVhBSL?p=preview)
+
 ##Usage
 To use mockServiceModule in your Jasmine tests, do the following:
 
