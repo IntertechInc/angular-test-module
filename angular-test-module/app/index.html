@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html ng-app="app" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Temperature Converter</title>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+</head>
+<body ng-controller="testController">
+    <div class="container-fluid">
+        <div class="page-header">
+            <h1>Temperature Converter</h1>
+        </div>
+        <div class="row">
+            <div class="col-sm-6">
+                <form ng-submit="toCelsius()" class="form-inline">
+                    <label for="mf">Fahrenheit temperature&nbsp;</label><input id="mf" ng-model="model.fahrenheit" class="form-control">
+                    <input type="submit" value="Convert" class="btn btn-primary" />
+                    <h3 ng-show="model.celsiusResult.length > 0">{{model.celsiusResult}}</h3>
+                </form>
+            </div>
+            <div class="col-sm-6">
+                <form ng-submit="toFahrenheit()" class="form-inline">
+                    <label for="mc">Celsius temperature&nbsp;</label><input id="mc" ng-model="model.celsius" class="form-control">
+                    <input type="submit" value="Convert" class="btn btn-primary" />
+                    <h3 ng-show="model.fahrenheitResult.length > 0">{{model.fahrenheitResult}}</h3>
+                </form>
+            </div>
+        </div>
+        <br/><br/>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.1/angular.js"></script>
+
+    <script src="app.js"></script>
+    <script src="testController.js"></script>
+    <script src="temperatureService.js"></script>
+</body>
+</html>
